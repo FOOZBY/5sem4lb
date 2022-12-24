@@ -153,7 +153,9 @@ public:
 
 	void prev_elem(int data)
 	{
-		if (Node* temp = prev_elem_ret(data))
+		Node* temp = nullptr;
+		temp = prev_elem_ret(data);
+		if (temp)
 		{
 			cout << "Значение родителя " << "числа " << data << " = " << temp->data << endl;
 		}
@@ -258,7 +260,8 @@ inline void Tree::remove(int data)
 	}
 	if (node->left && node->right)
 	{
-		Node* temp = min_elem_ret(node->right);
+		Node* temp = nullptr;
+		temp = min_elem_ret(node->right);
 		remove(temp->data);
 		if (parent->left == node)
 		{
