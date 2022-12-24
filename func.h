@@ -1,4 +1,4 @@
-#include <iostream>
+Ôªø#include <iostream>
 #include <queue>
 #include <string>
 using namespace std;
@@ -82,12 +82,12 @@ class Tree
 		}
 		if (node == nullptr)
 		{
-			cout << "ÕÂÚ ‚‚Â‰∏ÌÌÓ„Ó ˝ÎÂÏÂÌÚ‡ ‚ ‰ÂÂ‚Â" << endl;
+			cout << "–ù–µ—Ç –≤–≤–µ–¥—ë–Ω–Ω–æ–≥–æ —ç–ª–µ–º–µ–Ω—Ç–∞ –≤ –¥–µ—Ä–µ–≤–µ" << endl;
 			return nullptr;
 		}
 		if (parent == nullptr)
 		{
-			cout << "” ‚‚Â‰∏ÌÌÓ„Ó ˝ÎÂÏÂÌÚ‡ ÌÂÚ Ó‰ËÚÂÎˇ" << endl;
+			cout << "–£ –≤–≤–µ–¥—ë–Ω–Ω–æ–≥–æ —ç–ª–µ–º–µ–Ω—Ç–∞ –Ω–µ—Ç —Ä–æ–¥–∏—Ç–µ–ª—è" << endl;
 			return nullptr;
 		}
 		if (parent)
@@ -116,16 +116,16 @@ public:
 	void min_elem()
 	{
 		if (root)
-			cout << "ÃËÌËÏ‡Î¸Ì˚È ˝ÎÂÏÂÌÚ = " << min_elem_ret(this->root)->data << endl;
+			cout << "–ú–∏–Ω–∏–º–∞–ª—å–Ω—ã–π —ç–ª–µ–º–µ–Ω—Ç = " << min_elem_ret(this->root)->data << endl;
 		else
-			cout << "ƒÂÂ‚Ó ÔÛÒÚÓ" << endl;
+			cout << "–î–µ—Ä–µ–≤–æ –ø—É—Å—Ç–æ" << endl;
 	}
 	void max_elem()
 	{
 		if (root)
-			cout << "Ã‡ÍÒËÏ‡Î¸Ì˚È ˝ÎÂÏÂÌÚ = " << max_elem_ret(this->root)->data << endl;
+			cout << "–ú–∞–∫—Å–∏–º–∞–ª—å–Ω—ã–π —ç–ª–µ–º–µ–Ω—Ç = " << max_elem_ret(this->root)->data << endl;
 		else
-			cout << "ƒÂÂ‚Ó ÔÛÒÚÓ" << endl;
+			cout << "–î–µ—Ä–µ–≤–æ –ø—É—Å—Ç–æ" << endl;
 	}
 
 	void Preorder()
@@ -152,7 +152,7 @@ public:
 	{
 		if (Node* temp = prev_elem_ret(data))
 		{
-			cout << "«Ì‡˜ÂÌËÂ Ó‰ËÚÂÎˇ " << "˜ËÒÎ‡ " << data << " = " << temp->data << endl;
+			cout << "–ó–Ω–∞—á–µ–Ω–∏–µ —Ä–æ–¥–∏—Ç–µ–ª—è " << "—á–∏—Å–ª–∞ " << data << " = " << temp->data << endl;
 		}
 	}
 	void next_elem(int data)
@@ -171,7 +171,7 @@ inline void Tree::next_element(Node* node, int data)
 {
 	if (node==nullptr)
 	{
-		cout << "Ú‡ÍÓ„Ó ˝ÎÂÏÂÌÚ‡ ÌÂÚ" << endl;
+		cout << "—Ç–∞–∫–æ–≥–æ —ç–ª–µ–º–µ–Ω—Ç–∞ –Ω–µ—Ç" << endl;
 	}
 	if (data < node->data)
 	{
@@ -184,12 +184,12 @@ inline void Tree::next_element(Node* node, int data)
 	if (node->data == data)
 	{
 		if (node->left)
-			cout << "ÒÎÂ‰Û˛˘ËÈ ÏÂÌ¸¯ËÈ ˝ÎÂÏÂÌÚ ˜ËÒÎ‡ " << data << " = " << node->left->data << endl;
+			cout << "—Å–ª–µ–¥—É—é—â–∏–π –º–µ–Ω—å—à–∏–π —ç–ª–µ–º–µ–Ω—Ç —á–∏—Å–ª–∞ " << data << " = " << node->left->data << endl;
 		if (node->right)
-			cout << "ÒÎÂ‰Û˛˘ËÈ ·ÓÎ¸¯ËÈ ˝ÎÂÏÂÌÚ ˜ËÒÎ‡ " << data << " = " << node->right->data << endl;
+			cout << "—Å–ª–µ–¥—É—é—â–∏–π –±–æ–ª—å—à–∏–π —ç–ª–µ–º–µ–Ω—Ç —á–∏—Å–ª–∞ " << data << " = " << node->right->data << endl;
 		if (!node->left && !node->right)
 		{
-			cout << "—ÎÂ‰Û˛˘Ëı ˝ÎÂÏÂÌÚÓ‚ ˜ËÒÎ‡ " << data << " ÌÂÚ" << endl;
+			cout << "–°–ª–µ–¥—É—é—â–∏—Ö —ç–ª–µ–º–µ–Ω—Ç–æ–≤ —á–∏—Å–ª–∞ " << data << " –Ω–µ—Ç" << endl;
 		}
 	}
 }
@@ -223,7 +223,7 @@ inline void Tree::remove(int data)
 	}
 	if (node == nullptr)
 	{
-		cout << "Ú‡ÍÓ„Ó ˝ÎÂÏÂÌÚ‡ ÌÂÚ ‚ ‰ÂÂ‚Â" << endl;
+		cout << "—Ç–∞–∫–æ–≥–æ —ç–ª–µ–º–µ–Ω—Ç–∞ –Ω–µ—Ç –≤ –¥–µ—Ä–µ–≤–µ" << endl;
 		return;
 	}
 	if (node->left == nullptr && node->right == nullptr)
@@ -281,7 +281,7 @@ inline void Tree::print_tree_as_tree(Node* node, int lvl)
 		print_tree_as_tree(node->right, lvl+1);
 		for (int i = 0; i < lvl; i++)
 			cout << "\t";
-		cout << "óóóóóóóó" << node->data << endl;
+		cout << "‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî" << node->data << endl;
 		print_tree_as_tree(node->left, lvl+1);
 	}
 }
@@ -353,7 +353,7 @@ inline void Tree::add_new_elem(Node*& node, int data)
 		{
 			add_new_elem(node->right, data);
 		}
-		//ÂÒÎË data == node->data, ÚÓ Ú‡ÍÓÈ ÍÎ˛˜ ÛÊÂ ÂÒÚ¸ ‚ ‰ÂÂ‚Â, ÔÓ˝ÚÓÏÛ Ï˚ ÌË˜Â„Ó ÌÂ ‰ÂÎ‡ÂÏ
+		//–µ—Å–ª–∏ data == node->data, —Ç–æ —Ç–∞–∫–æ–π –∫–ª—é—á —É–∂–µ –µ—Å—Ç—å –≤ –¥–µ—Ä–µ–≤–µ, –ø–æ—ç—Ç–æ–º—É –º—ã –Ω–∏—á–µ–≥–æ –Ω–µ –¥–µ–ª–∞–µ–º
 	}
 }
 

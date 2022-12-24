@@ -1,4 +1,4 @@
-#include "func.h"
+﻿#include "func.h"
 #include <stack>
 
 class Btree
