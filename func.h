@@ -130,16 +130,19 @@ public:
 
 	void Preorder()
 	{
+		cout << "Prefix: ";
 		preorder(root);
 		cout << endl;
 	}
 	void Inorder()
 	{
+		cout << "Infix: ";
 		inorder(root);
 		cout << endl;
 	}
 	void Postorder()
 	{
+		cout << "Postfix: ";
 		postorder(root);
 		cout << endl;
 	}
@@ -290,7 +293,7 @@ inline void Tree::preorder(Node* node)
 {
 	if (node != nullptr)
 	{
-		cout << node->data << "\t";
+		cout << node->data << " ";
 		preorder(node->left);
 		preorder(node->right);
 	}
@@ -301,7 +304,7 @@ inline void Tree::inorder(Node* node)
 	if (node != nullptr)
 	{
 		inorder(node->left);
-		cout << node->data << "\t";
+		cout << node->data << " ";
 		inorder(node->right);
 	}
 }
@@ -312,7 +315,7 @@ inline void Tree::postorder(Node* node)
 	{
 		postorder(node->left);
 		postorder(node->right);
-		cout << node->data << "\t";
+		cout << node->data << " ";
 	}
 }
 
