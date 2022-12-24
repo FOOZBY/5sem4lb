@@ -162,6 +162,7 @@ public:
 
 	void Print_tree_as_tree()
 	{
+		cout << endl;
 		print_tree_as_tree(root, 0);
 	}
 };

@@ -3,9 +3,39 @@
 int main() 
 {
     setlocale(0, "");
-    
-    Btree tree;
+    //25 61 59 81 26 50 77 19 60 80 2 93 6 70 27
+    Tree bst;
+    bst.insert(25);
+    bst.insert(61);
+    bst.insert(59);
+    bst.insert(81);
+    bst.insert(26);
+    bst.insert(50);
+    bst.insert(77);
+    bst.insert(19);
+    bst.insert(60);
+    bst.insert(80);
+    bst.insert(2);
+    bst.insert(93);
+    bst.insert(6);
+    bst.insert(70);
+    bst.insert(27);
 
+    bst.min_elem();
+    bst.max_elem();
+    bst.Preorder();
+    bst.Inorder();
+    bst.Postorder();
+    bst.search(77);
+    bst.next_elem(80);
+    bst.prev_elem(59);
+    bst.remove(2);
+    bst.Widthorder();
+    bst.Print_tree_as_tree();
+
+
+
+    Btree tree;
     /* 
     post = 98 654 * 5 / 7 1 1 + ^ /
     inf = (((98*654)/5)/(7^(1+1)))
